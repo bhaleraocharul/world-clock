@@ -9,13 +9,31 @@
     <title>World Clock</title>
   </head>
   <body>
-    <header>
-      <h1>World Clock</h1>
-    </header>
-    <main></main>
+    <div class="container">
+      <header>
+        <h1>World Clock</h1>
+      </header>
+      <main>
+        <select>
+          <option value="">Select a city</option>
+          <option value="New York">New York</option>
+          <option value="London">London</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+
+        <div class="cities">
+          <h2>Los Angeles 🇺🇸</h2>
+          <div class="date">February 1st 2024</div>
+          <div class="time">9:14:29 AM</div>
+          <h2>Melbourne 🇦🇺</h2>
+          <div class="date">February 1st 2024</div>
+          <div class="time">9:14:29 AM</div>
+        </div>
+      </main>
+    </div>
     <footer>
       <p>
-        This AI project was coded by
+        This project was coded by
         <a href="https://www.linkedin.com/in/charul-bhalerao/" target="_blank">
           Charul Bhalerao</a
         >, is
@@ -28,6 +46,7 @@
         >
       </p>
     </footer>
+
     <script src="src/app.js"></script>
   </body>
 </html>
