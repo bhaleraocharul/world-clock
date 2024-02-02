@@ -22,10 +22,25 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let mumbaiElement = document.querySelector("#mumbai");
+  if (mumbaiElement) {
+    let mumbaiDateElement = mumbaiElement.querySelector(".date");
+    let mumbaiTimeElement = mumbaiElement.querySelector(".time");
+    let mumbaiTime = moment().tz("Asia/Kolkata");
+
+    mumbaiDateElement.innerHTML = mumbaiTime.format("MMMM Do YYYY");
+    mumbaiTimeElement.innerHTML = mumbaiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "currentLocation") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
