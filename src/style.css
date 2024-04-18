@@ -74,3 +74,41 @@ footer {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  select {
+    font-size: 16px;
+  }
+
+  value {
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .time {
+    font-size: 28px;
+  }
+
+  .time small {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
